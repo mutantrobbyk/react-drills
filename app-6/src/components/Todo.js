@@ -1,14 +1,12 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 
 
 export default class Todo extends Component {
-    constructor (props) {
-        super(props)
-        this.state = {
-            myList: []
-        }
-    }
-    render () {
-        
+    render() {
+        return (
+            <div>
+                <h4>{this.props.task}</h4>
+            </div>
+        )
     }
 }
